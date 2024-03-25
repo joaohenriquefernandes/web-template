@@ -1,34 +1,47 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Web Application Template (Front-end)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository serves as a template to kickstart new front-end web application projects, configured with standardization tools to ensure code consistency and quality.
 
-Currently, two official plugins are available:
+## Standardization Tools
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **ESLint**: JavaScript/TypeScript linter.
+- **Prettier**: Code formatter.
+- **Husky**: Git hook execution tool.
+- **Lint-staged**: Runs linters on staged files in Git.
+- **Conventional Commits**: Commit message conventions.
+- **Commit Lint**: Commit message linter.
+- **EditorConfig**: Editor settings standardization.
 
-## Expanding the ESLint configuration
+## How to Use This Template
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository to start a new project:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/joaohenriquefernandes/api-template.git <your_project_name>
+cd <your_project_name>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# web-template
->>>>>>> 670bd82601f0092083a8543b845b282c140cde30
+2. Install project dependencies:
+
+```bash
+npm install
+```
+
+3. Start developing your web application!
+
+## Additional Configurations
+
+- **EditorConfig**: Configure editor rules in the `.editorconfig` file.
+- **ESLint**: ESLint rules can be configured in the `.eslintrc.js` file.
+- **Prettier**: Prettier settings can be defined in the `.prettierrc` file.
+- **Husky & lint-staged**: Configure scripts in the `package.json` file.
+- **Conventional Commits**: Utilize the specified conventions in commit messages.
+- **Commit Lint**: Configure commit rules in the `.commitlintrc` file.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues and send pull requests for improvements.
+
+## License
+
+This project is licensed under the MIT License.
